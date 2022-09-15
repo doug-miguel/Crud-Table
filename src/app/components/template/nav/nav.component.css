@@ -1,0 +1,12 @@
+.sidnav {
+  background-color: #3f51b5;
+  width: 170px;
+}
+
+.sidnav a {
+  color: white;
+}
+
+.sidnav a i {
+  margin-right: 5px;
+}
