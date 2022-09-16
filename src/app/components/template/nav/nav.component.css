@@ -10,3 +10,9 @@
 .sidnav a i {
   margin-right: 5px;
 }
+
+.content {
+  padding: 1rem;
+  background-color: #fff;
+  color: #222222;
+}
