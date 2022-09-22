@@ -18,6 +18,7 @@ import { ProductCrudComponent } from "./views/product-crud/product-crud.componen
 import { AquaDirective } from "./directives/aqua.directive";
 import { TforDirective } from "./directives/tfor.directive";
 import { BlueDirective } from "./directives/blue.directive";
+import { RedDirective } from "./directives/red.directive";
 import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
@@ -34,6 +35,7 @@ import { MatSortModule } from "@angular/material/sort";
 
 import localePr from "@angular/common/locales/pt";
 import { registerLocaleData } from "@angular/common";
+import { BrownDirective } from './directives/brown.directive';
 
 registerLocaleData(localePr);
 
@@ -47,10 +49,12 @@ registerLocaleData(localePr);
     ProductCrudComponent,
     AquaDirective,
     BlueDirective,
+    RedDirective,
     TforDirective,
     ProductCreateComponent,
     ProductReadComponent,
     ProductRead2Component,
+    BrownDirective,
   ],
   imports: [
     BrowserModule,
