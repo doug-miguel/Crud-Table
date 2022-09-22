@@ -11,11 +11,12 @@ export class ProductService {
   constructor(private MatSnackBar: MatSnackBar, private http: HttpClient) {}
   baseUrl: string = "http://localhost:3000/products";
 
-  showMessage(msg: string): void {
+  showMessage(msg: string, isError: boolean = false): void {
     this.MatSnackBar.open(msg, "X", {
       duration: 3000,
       horizontalPosition: "right",
       verticalPosition: "top",
+      panelClass: isError ? ["msg-error"] : ["msg-success"],
     });
   }
 
@@ -35,5 +36,10 @@ export class ProductService {
   update(product: Product): Observable<Product> {
     const url = `${this.baseUrl}/${product.id}`;
     return this.http.put<Product>(url, product);
+  }
+
+  delete(id: number): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Product>(url);
   }
 }

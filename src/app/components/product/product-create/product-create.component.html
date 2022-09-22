@@ -8,15 +8,25 @@
         matInput
         [(ngModel)]="product.name"
         name="name"
+        [ngClass]="{
+          redBorder: error
+        }"
       />
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field
+      [ngClass]="{
+        redBorder: error
+      }"
+    >
       <input
         type="number"
         placeholder="Preço (R$)"
         matInput
         [(ngModel)]="product.price"
         name="price"
+        [ngClass]="{
+          redBorder: error
+        }"
       />
     </mat-form-field>
   </form>

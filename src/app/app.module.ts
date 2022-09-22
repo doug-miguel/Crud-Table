@@ -37,6 +37,7 @@ import localePr from "@angular/common/locales/pt";
 import { registerLocaleData } from "@angular/common";
 import { BrownDirective } from './directives/brown.directive';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 
 registerLocaleData(localePr);
 
@@ -57,6 +58,7 @@ registerLocaleData(localePr);
     ProductRead2Component,
     BrownDirective,
     ProductUpdateComponent,
+    ProductDeleteComponent,
   ],
   imports: [
     BrowserModule,

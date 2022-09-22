@@ -23,7 +23,7 @@
 
   <mat-paginator
     #paginator
-    [length]="dataSource?.data?.length"
+    [length]="dataSource!.data!.length"
     [pageIndex]="0"
     [pageSize]="5"
     [pageSizeOptions]="[1, 5, 10]"

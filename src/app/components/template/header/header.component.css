@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+.c-white {
+  color: #fff;
+}
+
 .header .logo {
   max-width: 10rem;
 }
@@ -17,6 +21,6 @@
   padding-left: 15px;
 }
 
-.header .title-group  i{
+.header .title-group i {
   padding-right: 5px;
 }
