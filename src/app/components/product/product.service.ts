@@ -32,7 +32,7 @@ export class ProductService {
     return this.http.get<Product>(url);
   }
 
-  updata(product: Product): Observable<Product> {
+  update(product: Product): Observable<Product> {
     const url = `${this.baseUrl}/${product.id}`;
     return this.http.put<Product>(url, product);
   }

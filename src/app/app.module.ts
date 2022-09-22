@@ -36,6 +36,7 @@ import { MatSortModule } from "@angular/material/sort";
 import localePr from "@angular/common/locales/pt";
 import { registerLocaleData } from "@angular/common";
 import { BrownDirective } from './directives/brown.directive';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 
 registerLocaleData(localePr);
 
@@ -55,6 +56,7 @@ registerLocaleData(localePr);
     ProductReadComponent,
     ProductRead2Component,
     BrownDirective,
+    ProductUpdateComponent,
   ],
   imports: [
     BrowserModule,
