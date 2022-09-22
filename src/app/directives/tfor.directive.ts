@@ -10,7 +10,7 @@ import {
   selector: "[Tfor]",
 })
 export class TforDirective implements OnInit {
-  @Input("TforFor") strings: string[] | undefined;
+  @Input("TforFor") strings!: string[];
 
   constructor(
     private view: ViewContainerRef,
